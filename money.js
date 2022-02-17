@@ -30,6 +30,23 @@ document.getElementById('culculation').addEventListener('click',function(){
    const balanceAmount = incomeAmount - totalCost;
 
    balanceRemain.innerText = balanceAmount;
+   document.getElementById('save-button').addEventListener('click', function(){
+      const incomeMonthly = document.getElementById('income');
+      const incomeAmount = parseInt(incomeMonthly.value);
+      const saveRate = document.getElementById('save-rate');
+      const saveRateNumber = parseInt(saveRate.value);
+      const saveRateAmount = saveRateNumber / 100;
+      
+      const saveTotal = document.getElementById('save-amount');
+      const saveTotalAmount = parseInt(saveTotal.value);
+      const saveAmount = incomeAmount * saveRateAmount;
+      
+      saveTotal.innerText = saveAmount;
+      const remainingBalance = document.getElementById('remaining-balance');
+      const remainingBalanceAmount = parseInt(remainingBalance);
+      const remainAmount = balanceAmount - saveAmount ;
+      remainingBalance.innerText = remainAmount;
+   
+   })
 
-  
-})
+});

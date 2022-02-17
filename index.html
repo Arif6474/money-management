@@ -13,40 +13,40 @@
        <h2 class="money-title">Money Management</h2>
    </header>
    <main>
+      
+
        <section class="mt-4">
         <div class="container px-4">
-            <div class="row gx-5">
-              <div class="col">
-               <div class="border bg-light" >
-                   <img class="w-75" src="images/19-SM662236.jpg" alt="">
+            <div class="d-flex gx-5">
+              
+               <div class="col-6 bg-light" >
+                   <img class="money-image" src="images/19-SM662236.jpg" alt="">
                </div>
-              </div>
-              <div class="col">
-                <div class="p-3 border bg-light">
+                <div class="p-3 col-6 bg-light">
                     <h3 class="text-center mb-4">Income</h3>
-                    <p>Income: <input id="income" type="text" placeholder="Enter income"></p>
+                    <p>Income: <input class="money-input" id="income" type="text" placeholder="Enter income"></p>
                     
                     <h3 class="text-center mb-4">Expenses</h3>
-                    <p>Food: <input id="food-expense"  type="text" placeholder="Enter food expense"></p>
+                    <p>Food: <input id="food-expense"  class="money-input" type="text" placeholder="Enter food expense"></p>
                     
-                    <p>Rent: <input id="rent-expense" type="text" placeholder="Enter rent expense"></p>
+                    <p>Rent: <input id="rent-expense"  class="money-input" type="text" placeholder="Enter rent expense"></p>
                     
-                    <p>cloth: <input id="cloth-expense" type="text" placeholder="Enter cloth expense"></p>
+                    <p>cloth: <input id="cloth-expense"  class="money-input" type="text" placeholder="Enter cloth expense"></p>
                     
                     <button id="culculation" type="button" class="btn btn-success my-2">Culculate</button>
-                    <h4>Total Expenses: <span id="total-expenses">00</span> </h4>
-                    <h4>Balance: <span id="balance">00</span> </h4>
+                    <h5>Total Expenses: <span id="total-expenses">00</span> </h5>
+                    <h5>Balance: <span id="balance">00</span> </h5>
 
                    <div>
-                    <p>Save: <input type="text" placeholder="saving rate"> <span>%</span>
-                     <button type="button" class="btn btn-success my-2">Save</button>
+                    <p>Save: <input id="save-rate"  class="money-input" type="text" placeholder="saving rate"> <span>%</span>
+                     <button id="save-button" type="button" class="btn btn-success my-2">Save</button>
                     </p>
-                    <h4 class="money-amount">Saving Amount:<span>00</span> </h4>
-                    <h4 class="money-amount">Remaining Balace:<span>00</span> </h4>
+                    <h4 class="money-amount">Saving Amount: <span id="save-amount">00</span> </h4>
+                    <h4 class="money-amount">Remaining Balace: <span id="remaining-balance">00</span> </h4>
                    </div>
 
                 </div>
-              </div>
+              
             </div>
           </div>
        </section>
