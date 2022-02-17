@@ -1,3 +1,8 @@
-h1{
-    color: aqua;
+.money-title{
+    color: palevioletred;
+    text-align: center;
+    margin-top: 10px;
+}
+.money-amount{
+    font-size: 20px;
 }
