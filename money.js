@@ -25,7 +25,7 @@ document.getElementById('culculation').addEventListener('click',function(){
 
    if ((foodExpenseAmount > 0) && (rentExpenseAmount > 0) && (clothExpenseAmount > 0) && (totalCost > 0 ) ){
       totalExpenses.innerText = totalCost;
-      
+   
    }
    // user income
    const incomeMonthly = document.getElementById('income');
