@@ -23,7 +23,7 @@ document.getElementById('culculation').addEventListener('click',function(){
 
    // 1.error handlig
 
-   if ((rentExpenseAmount > 0) && (rentExpenseAmount > 0) && (clothExpenseAmount > 0) && (totalCost > 0 ) ){
+   if ((foodExpenseAmount > 0) && (rentExpenseAmount > 0) && (clothExpenseAmount > 0) && (totalCost > 0 ) ){
       totalExpenses.innerText = totalCost;
       
    }
@@ -32,11 +32,13 @@ document.getElementById('culculation').addEventListener('click',function(){
    const incomeAmount = parseFloat(incomeMonthly.value);
    const balanceRemain = document.getElementById('balance');
    const balanceRemainAmount = parseFloat(balanceRemain);
-   const balanceAmount = incomeAmount - totalCost; 
+   const balanceAmount = incomeAmount - totalCost;
+
    // 2.error handlig
-//   if (incomeAmount > 0) {
-//    balanceRemain.innerText = balanceAmount;
-//   }
+  if ((incomeAmount > 0) && (totalCost > 0) && (foodExpenseAmount > 0) && (rentExpenseAmount > 0) && (clothExpenseAmount > 0)) {
+   balanceRemain.innerText = balanceAmount;
+  }
+  
 // clear the input field
 foodExpense.value = '';
 rentExpense.value = ''; 
